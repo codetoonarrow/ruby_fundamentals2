@@ -28,3 +28,10 @@ puts "--------------------"
 # Stored list alphabetically.
 
 shop(grocery_list.sort)
+puts "--------------------"
+# Removed Salmon
+
+puts grocery_list.delete("salmon")
+puts "--------------------"
+
+shop(grocery_list)
