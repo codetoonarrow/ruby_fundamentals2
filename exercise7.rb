@@ -32,3 +32,7 @@ end
 expand(students)
 
 puts "-----------------------"
+
+
+students.delete(:cohort1)
+puts students
