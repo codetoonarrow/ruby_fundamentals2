@@ -1,3 +1,4 @@
+# Hash representing the students and cohorts.
 students = {
   :cohort1 => 34,
   :cohort2 => 42,
@@ -5,11 +6,8 @@ students = {
 }
 
 puts "-----------------------"
-teachers = {
-  :cohort1 => 1,
-  :cohort2 => 3,
-  :cohort3 => 5
-}
+
+# Method created to display names.
 
 students.each do |k, v|
   puts "#{k}: #{v}"
@@ -17,10 +15,14 @@ end
 
 puts "-----------------------"
 
+# New cohort added to hash.
+
 students.merge!(cohort4: 43)
  puts students.keys
 
 puts "-----------------------"
+
+# Increased size of each cohort by 5%.
 
 def expand(s)
   s.each do |k, v|
@@ -33,6 +35,19 @@ expand(students)
 
 puts "-----------------------"
 
+# Deleted cohort number 2 from the hash.
 
-students.delete(:cohort1)
+students.delete(:cohort2)
 puts students
+
+puts "-----------------------"
+
+# Bonus Project: combine the sum of all the values.
+
+  sum = 0
+
+  students.each do |k, v|
+    sum += v
+  end
+
+puts "#{sum}"
