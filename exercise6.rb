@@ -7,3 +7,9 @@ grocery_list.each do |asterisk|
 end
 
 puts grocery_list.count
+
+if grocery_list.include? ("banana")
+  puts "You don't need to pick up bananas today"
+else
+  puts "You need to pick up bananas"
+end
